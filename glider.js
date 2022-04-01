@@ -1,24 +1,23 @@
-const carousels = document.querySelectorAll(".carousels");
+var sliders = document.querySelectorAll('.glide');
 
-        Object.values(carousels).map(carousel => {
-            const slider = new Glide(carousel, {
-                type: "carousel"
-            });
-            slider.mount();
-        });
+for (var i = 0; i < sliders.length; i++) {
+  var glide = new Glide(sliders[i], {
+    gap: 15,
+  });
+  
+  glide.mount();
+}
 
-var checkbox = document.querySelector('#options-rewind-checkbox')
+// var glide = new Glider('#options-rewind', {
+//   rewind: checkbox.checked,
+//   startAt: 6,
+//   perView: 2
+// })
 
-var glide = new Glider('#options-rewind', {
-  rewind: checkbox.checked,
-  startAt: 6,
-  perView: 2
-})
+// checkbox.addEventListener('change', function () {
+//   glide.update({
+//     rewind: checkbox.checked
+//   })
+// })
 
-checkbox.addEventListener('change', function () {
-  glide.update({
-    rewind: checkbox.checked
-  })
-})
-
-glide.mount()
+// glide.mount()
