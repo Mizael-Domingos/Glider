@@ -1,0 +1,40 @@
+
+button.glider-prev{
+    padding: 5%;
+    color: black !important;
+}
+button.glider-next{
+    padding: 5%;
+    color: black !important;
+}
+figure {
+        
+    text-align: center;
+    
+}
+
+#container {
+    display: inline-block;
+    position: relative;
+    background-color: gray;
+    border-color: black;
+    border:solid 1px;
+    border-radius:20px;
+}
+
+#container figcaption {
+    position: absolute;
+    top: 145px;
+    right: 20px;
+    left: 20px;
+    font-size: 20px;
+    color: black;
+}
+
+#mostrar{
+    display: none;
+}
+
+#passar_mouse:hover #mostrar{
+    display:block;
+}

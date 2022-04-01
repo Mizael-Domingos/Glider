@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/glide.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/main.css" .css>
+    <title>Glider2</title>
+</head>
+
+<body>
+
+    <a href="index.html" class="nav-link">Carrossel1</a>
+
+    <div class="glider-contain multiple">
+        <h3> Carossel2</h3>
+
+        <button aria-label="Previous" class="glider-prev">«</button>
+
+        <div class="second_glider">
+            <figure id="container">
+                <div id="div1">
+                    <div id="passar_mouse">
+                        <img src="produtos/barra-chata.png" alt="produtos" style="width:25%">
+                        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit.</blockquote>
+
+                        <div id="mostrar">
+                            <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos modi dolorem nam
+                                debitis inventore rerum exercitationem quasi ab saepe atque molestias quae nesciunt
+                                maiores molestiae eaque, in expedita, asperiores delectus?</figcaption>
+                        </div>
+                    </div>
+                </div>
+            </figure>
+
+            </figure>
+            <figure id="container">
+                <div id="passar_mouse">
+                    <img src="produtos/basculante.png" alt="produtos" style="width:25%">
+
+                    <div id="mostrar">
+                        <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sunt amet nulla
+                            reprehenderit expedita cumque minus molestias, magni, eaque, voluptate dolores! Porro
+                            debitis autem cum molestias esse totam aut voluptatem!</figcaption>
+
+                    </div>
+                </div>
+                <blockquote>Loren Quireli2 </blockquote>
+            </figure>
+            <figure>
+                <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis adipisci saepe eos minima
+                    repellat amet sunt quaerat corrupti modi odit laboriosam natus sapiente aut similique sit,
+                    voluptatibus ratione. Iste, aperiam?</blockquote>
+                <figcaption>Loren Quireli3</figcaption>
+            </figure>
+            <figure>
+                <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis adipisci saepe eos minima
+                    repellat amet sunt quaerat corrupti modi odit laboriosam natus sapiente aut similique sit,
+                    voluptatibus ratione. Iste, aperiam?</blockquote>
+                <figcaption>Loren Quireli4</figcaption>
+            </figure>
+            <figure>
+                <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis adipisci saepe eos minima
+                    repellat amet sunt quaerat corrupti modi odit laboriosam natus sapiente aut similique sit,
+                    voluptatibus ratione. Iste, aperiam?</blockquote>
+                <figcaption>Loren Quireli5</figcaption>
+            </figure>
+            <figure>
+                <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis adipisci saepe eos minima
+                    repellat amet sunt quaerat corrupti modi odit laboriosam natus sapiente aut similique sit,
+                    voluptatibus ratione. Iste, aperiam?</blockquote>
+                <figcaption>Loren Quireli6</figcaption>
+            </figure>
+
+        </div>
+
+        <button aria-label="Next" class="glider-next">»</button>
+
+        <div id="dots" class="glider-dots"></div>
+
+
+    </div>
+
+
+    <script src="glider.min.js"></script>
+    <script src="glider.js"></script>
+
+    <script>
+        new Glider(document.querySelector(".second_glider"), {
+            slidesToShow: 1,
+            slidesToScrooll: 1,
+            dots: '#dots',
+            draggable: true,
+            arrows: {
+                prev: '.glider-prev',
+                next: '.glider-next'
+            }
+        });
+    </script>
+
+</body>
+</html>
