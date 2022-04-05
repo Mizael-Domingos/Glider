@@ -22,6 +22,10 @@ figure {
     border-radius:20px;
 }
 
+#container:hover {
+    background-color: rgba(red, green, blue, alpha); /*gray in rgba */
+}
+
 #container figcaption {
     position: absolute;
     top: 145px;
